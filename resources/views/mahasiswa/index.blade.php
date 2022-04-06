@@ -39,7 +39,11 @@
                     <td>{{$mahasiswa->nama}}</td>
                     <td>{{$mahasiswa->nim}}</td>
                     <td>{{$mahasiswa->alamat}}</td>
-                    <td><a href="/mahasiswa/{{$mahasiswa->id}}/edit" class="btn btn-warning btn-sm">Edit</a></td>
+                    <td>
+                      <a href="/mahasiswa/{{$mahasiswa->id}}/detail" class="btn btn-success btn-sm">Detail</a>
+                      <a href="/mahasiswa/{{$mahasiswa->id}}/edit" class="btn btn-warning btn-sm">Edit</a>
+                      <a href="/mahasiswa/{{$mahasiswa->id}}/delete" class="btn btn-danger btn-sm">Delete</a>
+                    </td>
                 </tr>
                 @endforeach
             </table>
